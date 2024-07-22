@@ -7,18 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F06C49602C4D8F8D00D50966 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06C495F2C4D8F8D00D50966 /* InfoView.swift */; };
 		F0C3281F2C4D7182004B34C3 /* TiagoCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C3281E2C4D7182004B34C3 /* TiagoCardApp.swift */; };
 		F0C328212C4D7182004B34C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C328202C4D7182004B34C3 /* ContentView.swift */; };
 		F0C328232C4D7184004B34C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0C328222C4D7184004B34C3 /* Assets.xcassets */; };
 		F0C328262C4D7184004B34C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0C328252C4D7184004B34C3 /* Preview Assets.xcassets */; };
+		F0C3282E2C4D7399004B34C3 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F0C3282D2C4D7399004B34C3 /* Pacifico-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F06C495F2C4D8F8D00D50966 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		F0C3281B2C4D7182004B34C3 /* TiagoCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TiagoCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C3281E2C4D7182004B34C3 /* TiagoCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiagoCardApp.swift; sourceTree = "<group>"; };
 		F0C328202C4D7182004B34C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F0C328222C4D7184004B34C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0C328252C4D7184004B34C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F0C3282D2C4D7399004B34C3 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		F0C3282F2C4D747A004B34C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +56,10 @@
 		F0C3281D2C4D7182004B34C3 /* TiagoCard */ = {
 			isa = PBXGroup;
 			children = (
+				F0C3282F2C4D747A004B34C3 /* Info.plist */,
+				F0C3282C2C4D736C004B34C3 /* fonts */,
 				F0C3281E2C4D7182004B34C3 /* TiagoCardApp.swift */,
+				F06C495F2C4D8F8D00D50966 /* InfoView.swift */,
 				F0C328202C4D7182004B34C3 /* ContentView.swift */,
 				F0C328222C4D7184004B34C3 /* Assets.xcassets */,
 				F0C328242C4D7184004B34C3 /* Preview Content */,
@@ -65,6 +73,14 @@
 				F0C328252C4D7184004B34C3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F0C3282C2C4D736C004B34C3 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F0C3282D2C4D7399004B34C3 /* Pacifico-Regular.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0C3282E2C4D7399004B34C3 /* Pacifico-Regular.ttf in Resources */,
 				F0C328262C4D7184004B34C3 /* Preview Assets.xcassets in Resources */,
 				F0C328232C4D7184004B34C3 /* Assets.xcassets in Resources */,
 			);
@@ -138,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0C328212C4D7182004B34C3 /* ContentView.swift in Sources */,
+				F06C49602C4D8F8D00D50966 /* InfoView.swift in Sources */,
 				F0C3281F2C4D7182004B34C3 /* TiagoCardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +292,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TiagoCard/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TiagoCard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,6 +323,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TiagoCard/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TiagoCard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
